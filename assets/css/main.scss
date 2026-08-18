@@ -1,0 +1,54 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+// ─── Landing page ───────────────────────────────────────────────────────────
+
+.qb-landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 70vh;
+  padding: 3em 1em;
+}
+
+.qb-landing__title {
+  margin: 0 0 0.6em;
+  font-size: 2.6em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+
+  span {
+    font-weight: 300;
+    opacity: 0.7;
+  }
+}
+
+.qb-landing__note {
+  margin: 0;
+  font-size: 1.15em;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+.qb-landing__meta {
+  margin: 2.5em 0 0;
+  font-size: 0.85em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+@media (min-width: 48em) {
+  .qb-landing__title {
+    font-size: 3.4em;
+  }
+}
