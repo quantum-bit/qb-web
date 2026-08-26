@@ -1,0 +1,152 @@
+---
+layout: splash
+title: "Clients"
+permalink: /clients/
+description: "Companies Quantum bit d.o.o. has delivered software, engineering teams and talent to since 2014, including McKinsey & Company, Activision Blizzard Media Networks, MLG and Bright Horizons."
+---
+
+<section class="qb-hero">
+  <div class="qb-wrap">
+    <span class="qb-eyebrow">Clients</span>
+    <h1 class="qb-hero__title">Who we work with</h1>
+    <p class="qb-hero__sub">
+      Quantum bit has invoiced international clients continuously since 2014.
+      The companies below are drawn from that record &mdash; global consultancies
+      and media networks, venture-backed startups, established product firms and
+      research institutions. Some engagements are covered by non-disclosure
+      agreements and are not listed here.
+    </p>
+  </div>
+</section>
+
+<section class="qb-section qb-section--tight">
+  <div class="qb-wrap">
+    <div class="qb-stats">
+      <div class="qb-stat">
+        <span class="qb-stat__num">2014</span>
+        <span class="qb-stat__label">First international engagement, in the company's first year</span>
+      </div>
+      <div class="qb-stat">
+        <span class="qb-stat__num">30+</span>
+        <span class="qb-stat__label">Client companies invoiced across the US, UK, EU and Croatia</span>
+      </div>
+      <div class="qb-stat">
+        <span class="qb-stat__num">10 yrs</span>
+        <span class="qb-stat__label">Length of our longest continuous client relationship</span>
+      </div>
+      <div class="qb-stat">
+        <span class="qb-stat__num">2026</span>
+        <span class="qb-stat__label">Engagements still running today</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="qb-section">
+  <div class="qb-wrap">
+    <span class="qb-eyebrow">Selected engagements</span>
+    <h2 class="qb-h2">Relationships worth naming</h2>
+    <p class="qb-lede">
+      A few engagements shaped the company more than the rest &mdash; either
+      because of who the client was, or because of how long they kept us.
+    </p>
+
+    <div class="qb-grid qb-grid--2" style="margin-top:2.5em">
+      {% for c in site.data.clients.featured %}
+      <div class="qb-card">
+        <h3 class="qb-h3">{{ c.name }}</h3>
+        <p style="font-size:0.78em;letter-spacing:0.06em;color:var(--qb-text-dim);margin-bottom:0.9em">
+          {{ c.location }} &middot; {{ c.years }}
+        </p>
+        <p>{{ c.note }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="qb-section qb-section--alt">
+  <div class="qb-wrap">
+    <span class="qb-eyebrow">Through partners</span>
+    <h2 class="qb-h2">Work delivered as an extension of another team</h2>
+    <p class="qb-lede">
+      For many years Quantum bit operated as the functional engineering extension
+      of Big Room Studios, a Maine-based agency. Under that arrangement our
+      engineers worked on the agency's end clients directly &mdash; embedded in
+      their delivery teams, on their codebases &mdash; without a contract in
+      Quantum bit's name.
+    </p>
+
+    <div class="qb-rows" style="margin-top:2.5em">
+      {% for c in site.data.clients.via_partners %}
+      <div class="qb-row">
+        <div class="qb-row__term">{{ c.name }}</div>
+        <div>
+          <p class="qb-row__def"><strong>{{ c.years }}</strong> &middot; {{ c.via }}</p>
+          <p class="qb-row__def">{{ c.note }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <p class="qb-note" style="margin-top:2em">
+      We list these separately because the commercial relationship sat with the
+      partner agency. The engineering was ours.
+    </p>
+  </div>
+</section>
+
+<section class="qb-section">
+  <div class="qb-wrap">
+    <span class="qb-eyebrow">Client roster</span>
+    <h2 class="qb-h2">Some of the companies we have delivered for</h2>
+    <div class="qb-clients" style="margin-top:2.5em">
+      {% for c in site.data.clients.featured %}
+      <div class="qb-client">
+        <p class="qb-client__name">{{ c.name }}</p>
+        <p class="qb-client__meta">{{ c.location }}<br>{{ c.years }}</p>
+      </div>
+      {% endfor %}
+      {% for c in site.data.clients.clients %}
+      <div class="qb-client">
+        <p class="qb-client__name">{{ c.name }}</p>
+        <p class="qb-client__meta">{{ c.location }}<br>{{ c.years }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="qb-section qb-section--alt">
+  <div class="qb-wrap">
+    <span class="qb-eyebrow">Croatia &amp; academia</span>
+    <h2 class="qb-h2">Work closer to home</h2>
+    <p class="qb-lede">
+      Alongside the international practice we take on Croatian product work,
+      research collaborations and general engineering commissions.
+    </p>
+
+    <div class="qb-clients" style="margin-top:2.5em">
+      {% for c in site.data.clients.regional %}
+      <div class="qb-client">
+        <p class="qb-client__name">{{ c.name }}</p>
+        <p class="qb-client__meta">{{ c.location }}<br>{{ c.years }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="qb-cta">
+  <div class="qb-wrap qb-wrap--narrow">
+    <h2 class="qb-h2">References available on request.</h2>
+    <p class="qb-lede">
+      If you would like to speak to someone who has worked with us, ask &mdash;
+      we will put you in touch.
+    </p>
+    <div class="qb-hero__actions">
+      <a class="qb-btn qb-btn--primary" href="mailto:bruno@quantum-bit.net">bruno@quantum-bit.net</a>
+      <a class="qb-btn qb-btn--ghost" href="{{ '/services/' | relative_url }}">What we offer</a>
+    </div>
+  </div>
+</section>

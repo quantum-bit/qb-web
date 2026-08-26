@@ -1,22 +1,45 @@
 # Site Settings
-title: "Quantum bit d.o.o."
+title: "Quantum bit"
 name: "Quantum bit d.o.o."
-description: "Quantum bit d.o.o. — website under development."
+masthead_title: "Quantum bit"
+description: >-
+  Quantum bit d.o.o. is a Split-based engineering company providing software
+  development, technical talent sourcing, project management and QA to US and
+  European clients, alongside R&D in electronics, software-defined radio and
+  rapid prototyping.
 url: "https://quantum-bit.net"
 baseurl: ""
+locale: "en-US"
+repository: ""
+logo: ""
+search: false
 
 # Build Settings
 theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "dark"
 
 # SEO
 twitter:
   username: ""
+og_image: "/assets/images/og-quantum-bit.jpg"
+social:
+  type: Organization
+  name: "Quantum bit d.o.o."
+  links:
+    - "https://amos-bl.com/"
 
 # Site Author
 author:
   name: "Quantum bit d.o.o."
-  location: "Croatia"
+  location: "Split, Croatia"
+
+# Footer
+copyright: "Quantum bit d.o.o"
+copyright_url: "https://quantum-bit.net"
+footer:
+  since: 2014
+atom_feed:
+  hide: true
 
 # Reading Files
 include:
@@ -31,6 +54,8 @@ exclude:
   - .bundle/
   - .jekyll-cache
   - .sass-cache
+  - .idea
+  - .junie
   - _site
   - README.md
   - LICENSE
@@ -64,7 +89,6 @@ timezone: Europe/Zagreb
 
 # Plugins
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-include-cache
@@ -75,5 +99,6 @@ defaults:
       path: ""
       type: pages
     values:
-      layout: single
+      layout: splash
       author_profile: false
+      sidebar: false

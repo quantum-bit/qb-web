@@ -1,0 +1,11 @@
+main:
+  - title: "Services"
+    url: /services/
+  - title: "Clients"
+    url: /clients/
+  - title: "R&D"
+    url: /research/
+  - title: "About"
+    url: /about/
+  - title: "Contact"
+    url: /contact/

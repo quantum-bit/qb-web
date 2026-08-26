@@ -5,3 +5,7 @@ _site
 Gemfile.lock
 vendor/
 .bundle/
+
+# IDE
+.idea/
+.junie/
